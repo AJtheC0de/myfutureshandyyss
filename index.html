@@ -70,7 +70,9 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
     const sourceApplications = [
-      {month:'Juli',date:'06.07.2026',company:'JobCloud',role:'Client Success Specialist',status:'Absage',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQgMgQDPBrgkhdfNPchfcqvTQrQ'},
+      {month:'Juli',date:'01.07.2026',company:'Timly',role:'Customer Success Manager',status:'Absage',rejection:'07.08.2026',proof:'',outcome:'https://mail.google.com/mail/u/1/#search/timly/FMfcgzQhVhjbJXwcHkQTxkRPgCQHbTdJ'},
+      {month:'Juli',date:'01.07.2026',company:'Supertext',role:'Customer Success Manager',status:'Absage',rejection:'30.07.2026',proof:'',outcome:'https://mail.google.com/mail/u/1/#search/Supertext/FMfcgzQhVhXMVVVWzRBzFsvwgxrTxklg'},
+      {month:'Juli',date:'06.07.2026',company:'JobCloud',role:'Client Success Specialist',status:'Absage',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/jobcloud/FMfcgzQgMgQDPBrgkhdfNPchfcqvTQrQ'},
       {month:'Juli',date:'06.07.2026',company:'Nexxiot',role:'Customer Success Agent',status:'Absage',rejection:'14.07.2026',proof:'https://mail.google.com/mail/u/1/#search/Nexxiot/FMfcgzQhVNZkwQxJWSgMbXqJnmTxPflc'},
       {month:'Juli',date:'04.07.2026',company:'Kanton Luzern',role:'IT-Supporter/in & Applikationsmanager/in (a)',status:'Absage',rejection:'06.07.2026',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQgMgQDNxcCKRrJfGJPFrmgJSnM'},
       {month:'Juli',date:'04.07.2026',company:'Salesforce',role:'Customer Success Manager',status:'Absage',rejection:'03.09.2026',proof:'https://mail.google.com/mail/u/1/#search/Sales+Force/FMfcgzQhWLJHbgcDZlHmdhBvhJxxDtMQ'},
@@ -80,9 +82,9 @@
       {month:'August',date:'15.08.2026',company:'Ahead Health',role:'Customer Success & Support Specialist',status:'Absage',rejection:'09.09.2026',proof:'https://mail.google.com/mail/u/1/#search/ahead/FMfcgzQhWBccWcwClZVRCltnMQhstVCQ'},
       {month:'August',date:'11.08.2026',company:'FLOWIT',role:'Senior Customer Success Manager',status:'Absage',rejection:'14.08.2026',proof:'https://mail.google.com/mail/u/1/#search/flowit/FMfcgzQhVrGCWplhVwLxknxfQrQgwfsx'},
       {month:'August',date:'11.08.2026',company:'Kaulquappe',role:'Customer Success Manager',status:'Absage',rejection:'12.08.2026',proof:'https://mail.google.com/mail/u/1/#search/Kaulkuappe/KtbxLvHSzNxwlfcmwsBszKnLSmxHbPVBbV'},
-      {month:'August',date:'11.08.2026',company:'Bottomline',role:'Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Bottomline/FMfcgzQhVrChtqCPVfwvlHGqrXLCVcxK'},
-      {month:'August',date:'11.08.2026',company:'Alcom',role:'Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Alcom/FMfcgzQhVrChtqChsJKRMXRcTzrqTDNv'},
-      {month:'August',date:'11.08.2026',company:'Michael Page',role:'CRM & Customer Engagement Manager (m/w/d)',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Michael+Page/FMfcgzQhVrCjDvpMpqLdhkhrmkdBBKlX'},
+      {month:'August',date:'11.08.2026',company:'Bottomline',role:'Customer Success Manager',status:'Keine Antwort',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Bottomline/FMfcgzQhVrChtqCPVfwvlHGqrXLCVcxK'},
+      {month:'August',date:'11.08.2026',company:'Alcom',role:'Customer Success Manager',status:'Keine Antwort',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Alcom/FMfcgzQhVrChtqChsJKRMXRcTzrqTDNv'},
+      {month:'August',date:'11.08.2026',company:'Michael Page',role:'CRM & Customer Engagement Manager (m/w/d)',status:'Keine Antwort',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Michael+Page/FMfcgzQhVrCjDvpMpqLdhkhrmkdBBKlX'},
       {month:'August',date:'04.08.2026',company:'Xelon',role:'Account Manager',status:'Absage',rejection:'05.08.2026',proof:'https://mail.google.com/mail/u/1/#search/Xelon/FMfcgzQhVhgGxxBjLBLpXttTbvcdnCXr'},
       {month:'August',date:'04.08.2026',company:'AMAG',role:'Kundenportfoliomanager/-in',status:'Absage',rejection:'06.08.2026',proof:'https://mail.google.com/mail/u/1/#search/amag/FMfcgzQhVhgGxzHRVzdrXnlrvDGjPrph'},
       {month:'August',date:'04.08.2026',company:'Imnoo AG',role:'Senior Customer Success Manager',status:'Absage',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Imnoo+Ag/FMfcgzQhVhgGzBQRvGwcXrcRwCvLCnWR'},
@@ -90,8 +92,8 @@
       {month:'September',date:'11.09.2026',company:'emonitor AG',role:'Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWThznnlcmkqpTHSZfvTKwHhR'},
       {month:'September',date:'11.08.2026',company:'remotepass',role:'Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWThznpsQBKTVHKhxqqxghPMS'},
       {month:'September',date:'11.08.2026',company:'Fidectus',role:'Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWThznqzbdjrhlqvnBrpljfdB'},
-      {month:'September',date:'11.08.2026',company:'Palisis',role:'Junior Customer Success Manager',status:'Offen',rejection:'',proof:''},
-      {month:'September',date:'11.08.2026',company:'Neuronetix',role:'1st Level Support',status:'Offen',rejection:'',proof:''},
+      {month:'September',date:'11.08.2026',company:'Palisis',role:'Junior Customer Success Manager',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Palisis/QgrcJHrhxnfDqtTFhNbkRHBxKLDSpXQTWFl'},
+      {month:'September',date:'11.08.2026',company:'Neuronetix',role:'1st Level Support',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#search/Neuronetix/QgrcJHsbdJHVVRLtVhfQFhTgVlDvFZhmbPq'},
       {month:'September',date:'14.08.2026',company:'ElevenLabs',role:'CSM',status:'Absage',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWTmbbmkrDRkNdgzwdmmDRvzh'},
       {month:'September',date:'14.08.2026',company:'Jobgether',role:'CSM',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWTmbbmlvPlxrsxMHgTDpwHpl'},
       {month:'September',date:'14.08.2026',company:'LatticeFlowAI',role:'CSM',status:'Offen',rejection:'',proof:'https://mail.google.com/mail/u/1/#inbox/FMfcgzQhWTmbbnrwhwpvgSVxmhmFgDfj'},
@@ -103,9 +105,9 @@
       {month:'September',date:'22.09.2026',company:'Alparis',role:'Lead Customer Experience & Support (m/w/d) 100% Remote',status:'Offen',rejection:'',proof:''}
     ];
     const legacyNew=JSON.parse(localStorage.getItem('rav-applications-v1')||'[]');
-    const savedApplications=JSON.parse(localStorage.getItem('rav-applications-v2')||'null');
+    const savedApplications=JSON.parse(localStorage.getItem('rav-applications-v3')||'null');
     const applications=savedApplications||[...sourceApplications.map((a,i)=>({...a,id:`source-${i}`,outcome:a.outcome||'',note:a.note||''})),...legacyNew.map((a,i)=>({...a,id:a.id||`legacy-${i}`,outcome:a.outcome||''}))];
-    const saveAll=()=>localStorage.setItem('rav-applications-v2',JSON.stringify(applications));
+    const saveAll=()=>localStorage.setItem('rav-applications-v3',JSON.stringify(applications));
     let activeMonth='Alle';
     const monthOrder=['Juli','August','September'];
     const safe=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
